@@ -260,6 +260,8 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/Backup.png', .8)
 
+    time.sleep(.3)
+
     click_button('Images/General/Navigate.png', .8)
     
     # 
