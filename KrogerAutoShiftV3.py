@@ -176,6 +176,10 @@ for i in range(len(base_subdirs)):
     click_button('Images/Setup/OkClearRestore.png', .8)
 
     click_button('Images/Setup/ClearOk2.png', .7)
+
+    time.sleep(.5)
+
+    click_button('Images/Setup/ClearOk2.png', .7)
  
     click_button('Images/Setup/Close.png', .8)
 
@@ -202,10 +206,12 @@ for i in range(len(base_subdirs)):
     click_button('Images/TodayInfo/TodayClose.png', .8)
 
 
-    # Create Reports
+      # Create Reports
     click_button('Images/MainMenu/Reports.png', .8)
 
     click_button('Images/Reports/OptionsOk.png', .8)
+
+    time.sleep(1)
 
     click_button('Images/Reports/Custom.png', .8)
 
@@ -217,11 +223,19 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Reports/Ok.png', .8)
 
-    time.sleep(0.5)
+    pyautogui.press('right', interval=1.25)
 
-    click_button('Images/Reports/SelectCats.png', .8)
+    pyautogui.press('down', interval=1.25)
+    
+    time.sleep(1.5)
 
-    time.sleep(0.5)
+    pyautogui.write('000', interval=1.25)
+
+    pyautogui.press('enter', interval=1.25)
+
+    pyautogui.write('000', interval=1.25)
+
+    pyautogui.press('enter', interval=1.25)
 
     click_button('Images/Reports/Ok.png', .8)
 
@@ -298,6 +312,8 @@ for i in range(len(base_subdirs)):
     click_button('Images/MainMenu/Setup.png', .8)
 
     click_button('Images/Setup/Backup.png', .8)
+
+    time.sleep(.5)
 
     click_button('Images/General/Navigate.png', .8)
     
@@ -376,7 +392,7 @@ for i in range(len(base_subdirs)):
     click_button('Images/Wintakes/ItemDownload.png', .8)
     click_button('Images/Wintakes/Store.png', .8)
     click_button('Images/Wintakes/CreateDownloads.png', .7)
-    time.sleep(110)
+    time.sleep(60)
     click_button('Images/Wintakes/Ok.png', .8)
     click_button('Images/Wintakes/BackDownloads.png', .8)
     click_button('Images/Wintakes/Item.png', .8)
