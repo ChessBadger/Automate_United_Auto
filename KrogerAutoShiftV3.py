@@ -8,6 +8,8 @@ import re
 import shutil
 import errno
 from pynput.keyboard import Controller, Key
+import xlwings as xw
+
 
 keyboard = Controller()
 
@@ -180,6 +182,31 @@ for i in range(len(base_subdirs)):
     time.sleep(.5)
 
     click_button('Images/Setup/ClearOk2.png', .7)
+
+    click_button('Images/Setup/Area.png', .7)
+
+    pyautogui.press('f8', interval=1.25)
+
+    click_button('Images/Setup/Excel.png', .7)
+
+
+        # Connect to the most recently active workbook
+    wb = xw.books.active
+
+    # Select the active sheet (or specify the sheet by name)
+    ws = wb.sheets.active
+
+    # Initialize the boolean variable
+    found = False
+
+    # Iterate through all cells in the worksheet and print them to see the values
+    for row in ws.range('A1').expand('table').value:
+        # print(row)  # Debugging: print each row to check the contents
+        if 80910 in row or '80910' in row:  # Check for both number and string formats
+            found = True
+            break
+
+    click_button('Images/Setup/CloseExcel.png', .7)
  
     click_button('Images/Setup/Close.png', .8)
 
@@ -204,6 +231,40 @@ for i in range(len(base_subdirs)):
     click_button('Images/TodayInfo/TodaySave.png', .8)
 
     click_button('Images/TodayInfo/TodayClose.png', .8)
+
+    if found:
+        #Kroger KPC
+        click_button('Images/MainMenu/Proofing.png', .8)
+
+        click_button('Images/InventoryProofing/Import.jpg', .8)
+
+        click_button('Images/InventoryProofing/Data.jpg', .8)
+
+        click_button('Images/InventoryProofing/CSV.jpg', .8)
+
+        click_button('Images/InventoryProofing/DataOk.jpg', .8)
+
+        click_button('Images/InventoryProofing/Add.png', .8)
+
+        click_button('Images/InventoryProofing/InfoOk.png', .8)
+
+        click_button('Images/InventoryProofing/SelectAll.png', .8)
+
+        click_button('Images/InventoryProofing/Process.png', .8)
+
+        click_button('Images/InventoryProofing/DataOk.png', .8)
+
+        time.sleep(0.5)
+
+        click_button('Images/InventoryProofing/DataOk.png', .8)
+
+        click_button('Images/InventoryProofing/Finalize.png', .8)
+
+        click_button('Images/InventoryProofing/FinalYes.png', .8)
+
+        click_button('Images/InventoryProofing/FinalOk.png', .8)
+
+        click_button('Images/InventoryProofing/FinalClose.png', .8)
 
 
       # Create Reports
