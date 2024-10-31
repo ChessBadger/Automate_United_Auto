@@ -173,7 +173,9 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/ZipIcon.png', .7)
 
-    click_button('Images/Setup/Open.png', .8)
+    # click_button('Images/Setup/Open.png', .8)
+
+    pyautogui.press('enter', interval=.5)
 
     click_button('Images/Setup/OkClearRestore.png', .8)
 
@@ -185,9 +187,13 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/Area.png', .7)
 
+    time.sleep(1)
+
     pyautogui.press('f8', interval=1.25)
 
     click_button('Images/Setup/Excel.png', .7)
+
+    time.sleep(1.5)
 
 
         # Connect to the most recently active workbook
@@ -207,6 +213,10 @@ for i in range(len(base_subdirs)):
             break
 
     click_button('Images/Setup/CloseExcel.png', .7)
+
+    click_button('Images/Setup/File.png', .7)
+
+    click_button('Images/Setup/FileClose.png', .7)
  
     click_button('Images/Setup/Close.png', .8)
 
@@ -236,13 +246,13 @@ for i in range(len(base_subdirs)):
         #Kroger KPC
         click_button('Images/MainMenu/Proofing.png', .8)
 
-        click_button('Images/InventoryProofing/Import.jpg', .8)
+        click_button('Images/InventoryProofing/Import.png', .8)
 
-        click_button('Images/InventoryProofing/Data.jpg', .8)
+        click_button('Images/InventoryProofing/Data.png', .8)
 
-        click_button('Images/InventoryProofing/CSV.jpg', .8)
+        click_button('Images/InventoryProofing/CSV.png', .8)
 
-        click_button('Images/InventoryProofing/DataOk.jpg', .8)
+        click_button('Images/InventoryProofing/DataOk.png', .8)
 
         click_button('Images/InventoryProofing/Add.png', .8)
 
@@ -270,7 +280,8 @@ for i in range(len(base_subdirs)):
       # Create Reports
     click_button('Images/MainMenu/Reports.png', .8)
 
-    click_button('Images/Reports/OptionsOk.png', .8)
+    if not found:
+        click_button('Images/Reports/OptionsOk.png', .8)
 
     time.sleep(1)
 
@@ -497,7 +508,7 @@ for i in range(len(base_subdirs)):
 
     pyautogui.hotkey('ctrl', 'a', interval=.6)
 
-    pyautogui.write('C:\CardPrep')
+    pyautogui.write(r'C:\CardPrep')
     
     pyautogui.press('enter', interval=.5)
     

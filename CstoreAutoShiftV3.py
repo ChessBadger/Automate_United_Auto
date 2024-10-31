@@ -13,8 +13,6 @@ keyboard = Controller()
 
 window = None
 
-#AURORA
-
 # Prompt user for path
 base_path = input('Enter the base path: ')
 
@@ -177,12 +175,7 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/OkClearRestore.png', .8)
 
-    time.sleep(.5)
-
     click_button('Images/Setup/ClearOk2.png', .7)
-
-    time.sleep(.5)
-
  
     click_button('Images/Setup/Close.png', .8)
 
@@ -220,7 +213,7 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Reports/SelectAreas.png', .8)
 
-    click_button('Images/Reports/Pharmacy.png', .8)
+    click_button('Images/Reports/CStore.png', .8)
 
     click_button('Images/Reports/Ok.png', .8)
 
@@ -258,6 +251,41 @@ for i in range(len(base_subdirs)):
     click_button('Images/Reports/ReturnHome.png', .8)
 
     click_button('Images/Reports/ReturnHome2.png', .8)
+
+
+
+    # Export to Wintakes
+    click_button('Images/MainMenu/Export.png', .8)
+
+    click_button('Images/Exports/ExportsOk.png', .8)
+
+    click_button('Images/Exports/Wintakes.png', .8)
+
+    click_button('Images/Exports/Save.png', .8)
+
+    time.sleep(0.3)
+
+    click_button('Images/Exports/Save.png', .8)
+
+    time.sleep(0.3)
+
+    click_button('Images/Exports/Save.png', .8)
+
+    time.sleep(0.7)
+
+    click_button('Images/Exports/Cancel.png', .8)
+
+    time.sleep(0.7)
+
+    click_button('Images/Exports/Cancel.png', .8)
+
+    time.sleep(0.7)
+
+    click_button('Images/Exports/Cancel.png', .8)
+
+    click_button('Images/Exports/ExportsOk2.png', .65)
+
+    click_button('Images/Exports/Close.png', .8)
 
 
     # Backup
@@ -319,6 +347,41 @@ for i in range(len(base_subdirs)):
     time.sleep(.5)
     
     click_button('Images/Setup/BackupOk.png', .7)
+
+    #Lostakes
+    click_button('Images/Lostakes/Lostakes.png', .8)
+    click_button('Images/Lostakes/Send.png', .8)
+    click_button('Images/Lostakes/DC_Setup.png', .8)
+    click_button('Images/Lostakes/Search.png', .8)
+    pyautogui.write('Financial (w limits)')
+    click_button('Images/Lostakes/Apply.png', .8)
+    click_button('Images/Lostakes/Ok.png', .8)
+    click_button('Images/Lostakes/Create_Cards.png', .8)
+    time.sleep(0.5)
+    
+    pyautogui.press('f4', interval=.6)
+
+    pyautogui.hotkey('ctrl', 'a', interval=.6)
+
+    pyautogui.write(invPath + '/Cards')
+    
+    pyautogui.press('enter', interval=.5)
+
+    click_button('Images/Lostakes/Select.png', .8)
+    click_button('Images/Lostakes/Ok.png', .8)
+    click_button('Images/Lostakes/Parent_Dir.png', .8)
+    click_button('Images/Lostakes/Save.png', .8)
+    click_button('Images/Lostakes/Ok.png', .8)
+    time.sleep(0.3)
+
+    click_button('Images/Lostakes/Back.png', .8)
+    click_button('Images/Lostakes/Finalize.png', .8)
+    click_button('Images/Lostakes/Clear_Everything.png', .8)
+    pyautogui.hotkey('enter')
+    pyautogui.hotkey('enter')
+    click_button('Images/Lostakes/Back.png', .8)
+
+    click_button('Images/Wintakes/United.png', .8)
     
  
 while True:
