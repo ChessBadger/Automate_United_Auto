@@ -179,6 +179,8 @@ for i in range(len(base_subdirs)):
  
     click_button('Images/Setup/Close.png', .8)
 
+    input("Import price file and click enter to continue...")  # Pauses the program until the user presses Enter
+
 
     # Today's Info
     click_button('Images/MainMenu/TodayInfo.png', .8)
@@ -213,13 +215,9 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Reports/SelectAreas.png', .8)
 
-    click_button('Images/Reports/SelectWorksheet.png', .8)
+    click_button('Images/Reports/SelectPriorsVar.png', .8)
 
     click_button('Images/Reports/Ok.png', .8)
-
-    time.sleep(0.5)
-
-    click_button('Images/Reports/SelectCats.png', .8)
 
     time.sleep(0.5)
 

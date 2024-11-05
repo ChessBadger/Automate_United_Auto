@@ -179,7 +179,7 @@ for i in range(len(base_subdirs)):
 
     time.sleep(.5)
 
-    click_button('Images/Setup/ClearOk2.png', .7)
+    click_button('Images/Setup/ClearOk2.png', .8)
 
     time.sleep(.5)
 
@@ -220,7 +220,7 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Reports/SelectAreas.png', .8)
 
-    click_button('Images/Reports/Pharmacy.png', .8)
+    click_button('Images/Reports/Pharmacy.png', .9)
 
     click_button('Images/Reports/Ok.png', .8)
 
