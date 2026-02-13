@@ -185,7 +185,7 @@ for i in range(len(base_subdirs)):
 
     time.sleep(.5)
 
-    click_button('Images/TodayInfo/TodayInfo2.png', .999)
+    click_button('Images/TodayInfo/TodayInfo2.png', .99)
 
     pyautogui.write(invDate)
 
@@ -357,7 +357,8 @@ for i in range(len(base_subdirs)):
     click_button('Images/Lostakes/Send.png', .8)
     click_button('Images/Lostakes/DC_Setup.png', .8)
     click_button('Images/Lostakes/Search.png', .8)
-    pyautogui.write('Financial (w limits)')
+    # pyautogui.write('Financial (w limits)')
+    pyautogui.write('OUTPOST')
     click_button('Images/Lostakes/Apply.png', .8)
     click_button('Images/Lostakes/Ok.png', .8)
     click_button('Images/Lostakes/Create_Cards.png', .8)
@@ -380,7 +381,8 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Lostakes/Back.png', .8)
     click_button('Images/Lostakes/Finalize.png', .8)
-    click_button('Images/Lostakes/Clear_Everything.png', .8)
+    # click_button('Images/Lostakes/Clear_Everything.png', .8)
+    click_button('Images/Lostakes/Clear_Dir.png', .8)
     pyautogui.hotkey('enter')
     pyautogui.hotkey('enter')
     click_button('Images/Lostakes/Back.png', .8)
