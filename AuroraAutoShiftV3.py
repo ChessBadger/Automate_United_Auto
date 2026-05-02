@@ -185,8 +185,6 @@ for i in range(len(base_subdirs)):
 
     time.sleep(.5)
 
-    click_button('Images/Setup/ClearOk2.png', .8)
- 
     click_button('Images/Setup/Close.png', .8)
 
 

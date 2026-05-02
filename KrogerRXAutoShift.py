@@ -159,7 +159,7 @@ for i in range(len(base_subdirs)):
 
     time.sleep(0.5)
 
-    click_button('Images/General/Navigate.png', .8)
+    click_button('Images/General/Navigate.png', .85)
 
     time.sleep(0.5)
 
@@ -173,7 +173,9 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/ZipIcon.png', .7)
 
-    click_button('Images/Setup/Open.png', .8)
+    time.sleep(0.7)
+
+    click_button('Images/Setup/Open.png', .85)
 
     click_button('Images/Setup/OkClearRestore.png', .8)
 
@@ -181,11 +183,8 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/Setup/ClearOk2.png', .8)
 
-    click_button('Images/Setup/ClearOk2.png', .9)
+    time.sleep(1)
 
-    time.sleep(.5)
-
- 
     click_button('Images/Setup/Close.png', .8)
 
 
@@ -211,6 +210,7 @@ for i in range(len(base_subdirs)):
     click_button('Images/TodayInfo/TodayClose.png', .8)
 
 
+
     # Backup
     click_button('Images/MainMenu/Setup.png', .8)
 
@@ -220,6 +220,8 @@ for i in range(len(base_subdirs)):
 
     click_button('Images/General/Navigate.png', .8)
     
+    time.sleep(.7)
+
     # 
     pyautogui.press('f4')
 
@@ -235,13 +237,27 @@ for i in range(len(base_subdirs)):
 
     pyautogui.hotkey('ctrl', 'a', interval=1.25)
 
+    time.sleep(.5)
+
     pyautogui.write(invPath)
+
+    time.sleep(.5)
+
     
     pyautogui.press('enter', interval=.5)
+
+    time.sleep(.5)
+
     
     pyautogui.hotkey('alt', 'n')
+
+    time.sleep(.5)
+
     
     pyautogui.press('left', interval=.5)
+
+    time.sleep(.5)
+
     
     pyautogui.hotkey('ctrl', 'right', interval=.5)
     
@@ -261,6 +277,8 @@ for i in range(len(base_subdirs)):
 
     pyautogui.write(origDate)
 
+    time.sleep(.5)
+
     pyautogui.press('enter', interval=.5)
     
     pyautogui.press('enter', interval=.5)
@@ -268,6 +286,10 @@ for i in range(len(base_subdirs)):
     click_button('Images/Setup/BackupYes.png', .7)
     
     time.sleep(.5)
+    
+    click_button('Images/Setup/BackupOk.png', .7)
+
+    click_button('Images/Setup/BackupOk.png', .7)
     
     click_button('Images/Setup/BackupOk.png', .7)
     
